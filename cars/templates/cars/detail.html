@@ -7,5 +7,5 @@
 <p>Version : {{ car.version }}</p>
 <p>Note : {% if car.notation %}{{car.notation}} / 10{% else %}Aucune note{% endif %}</p>
 
-<p><a href="#">Modifier la note</a></p>
+<p><a href="/cars/note/{{car.id}}">{% if car.notation %}Modifier la note{% else %}Ajouter une note{% endif %}</a></p>
 <a href="/cars">Retour</a>
