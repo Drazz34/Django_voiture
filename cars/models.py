@@ -7,4 +7,4 @@ class Car(models.Model):
     annee = models.IntegerField(verbose_name="Année")
     cylindree = models.IntegerField(verbose_name="Cylindrée en cm3")
     version = models.CharField(max_length=45)
-    notation = models.IntegerField()
+    notation = models.IntegerField(null=True, verbose_name="Note")
